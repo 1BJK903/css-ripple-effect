@@ -39,7 +39,7 @@
 
           <h3>Navbar</h3>
 
-          <nav class="navbar navbar-default">
+          <nav class="navbar navbar-inverse">
               <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
@@ -173,6 +173,50 @@
               </ul>
           </div>
 
+          <h3>Pills</h3>
+
+          <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+
+          <hr>
+
+          <h3>How it's done?</h3>
+          <p>Added some inline style to override so the ripple is fully visible. It is not leaving the block when by default.</p>
+
+          <!-- Single button -->
+          <style>
+              .override {
+                  overflow: visible;
+              }
+              .override:after {
+                  background: rgba(255,0,0,0.3) !important;
+              }
+          </style>
+          <button type="button" class="override btn btn-primary btn-lg">
+              Override applied
+          </button>
+          <button type="button" class="override btn btn-primary btn-lg">
+              Override applied to a wider button
+          </button>
+
+          <p>
+<pre>.override {
+  overflow: visible;
+}
+.override:after {
+  background-color: red;
+}</pre>
+          </p>
+
+          <hr>
+
+          <h3>Usage</h3>
+
+          <p>This feature is currently added to ".btn" and ".navbar a" selectors. It can be added as a class or any other selector. The only problem is that it doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere towards bottom-left region.</p>
+
       </section>
     </div>
 
@@ -184,7 +228,6 @@
       </footer>
     </div>
 
-    
 
   </body>
 </html>

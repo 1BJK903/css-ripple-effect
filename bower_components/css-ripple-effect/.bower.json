@@ -1,0 +1,13 @@
+{
+  "name": "css-ripple-effect",
+  "homepage": "https://github.com/mladenplavsic/css-ripple-effect",
+  "_release": "566078e757",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "566078e757e1ffc1b32dbd7a2078d9bea69aed6c"
+  },
+  "_source": "git@github.com:mladenplavsic/css-ripple-effect.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:mladenplavsic/css-ripple-effect.git"
+}

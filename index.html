@@ -11,11 +11,11 @@
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.css.map" />
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="stylesheets/stylesheet.css">
-      <link rel="stylesheet" href="bower_components/css-ripple-effect/ripple.css" />
+      <link rel="stylesheet" href="//cdn.rawgit.com/mladenplavsic/css-ripple-effect/master/ripple.css" />
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>  </head>
       <style>
-          a {
+          a, button {
               outline: none !important;
           }
       </style>
@@ -54,37 +54,37 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand" href="#">Brand</a>
+                      <a class="navbar-brand" href="javascript:void(0);">Brand</a>
                   </div>
 
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
-                          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#" class="ripple">Link</a></li>
+                          <li class="active"><a href="javascript:void(0);">Link <span class="sr-only">(current)</span></a></li>
+                          <li><a href="javascript:void(0);" class="ripple">Link</a></li>
                           <li class="dropdown">
-                              <a href="#" class="dropdown-toggle ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                              <a href="javascript:void(0);" class="dropdown-toggle ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                               <ul class="dropdown-menu" role="menu">
-                                  <li><a href="#">Action</a></li>
-                                  <li><a href="#">Another action</a></li>
-                                  <li><a href="#">Something else here</a></li>
+                                  <li><a href="javascript:void(0);">Action</a></li>
+                                  <li><a href="javascript:void(0);">Another action</a></li>
+                                  <li><a href="javascript:void(0);">Something else here</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
+                                  <li><a href="javascript:void(0);">Separated link</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">One more separated link</a></li>
+                                  <li><a href="javascript:void(0);">One more separated link</a></li>
                               </ul>
                           </li>
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#" class="ripple">Link</a></li>
+                          <li><a href="javascript:void(0);" class="ripple">Link</a></li>
                           <li class="dropdown">
-                              <a href="#" class="dropdown-toggle ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                              <a href="javascript:void(0);" class="dropdown-toggle ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                               <ul class="dropdown-menu" role="menu">
-                                  <li><a href="#">Action</a></li>
-                                  <li><a href="#">Another action</a></li>
-                                  <li><a href="#">Something else here</a></li>
+                                  <li><a href="javascript:void(0);">Action</a></li>
+                                  <li><a href="javascript:void(0);">Another action</a></li>
+                                  <li><a href="javascript:void(0);">Something else here</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
+                                  <li><a href="javascript:void(0);">Separated link</a></li>
                               </ul>
                           </li>
                       </ul>
@@ -94,96 +94,24 @@
 
           <h3>Buttons</h3>
 
-          <!-- Single button -->
-          <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
-                  Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
+          <a class="btn btn-default btn-lg ripple">Button</a>
 
-          <!-- Single button -->
-          <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
-                  Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
+          <a class="btn btn-primary btn-lg ripple">Button</a>
 
-          <!-- Single button -->
-          <div class="btn-group">
-              <button type="button" class="btn btn-success dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
-                  Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
+          <a class="btn btn-success btn-lg ripple">Button</a>
 
-          <!-- Single button -->
-          <div class="btn-group">
-              <button type="button" class="btn btn-info dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
-                  Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
+          <a class="btn btn-info btn-lg ripple">Button</a>
 
-          <!-- Single button -->
-          <div class="btn-group">
-              <button type="button" class="btn btn-warning dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
-                  Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
+          <a class="btn btn-warning btn-lg ripple">Button</a>
 
-          <!-- Single button -->
-          <div class="btn-group">
-              <button type="button" class="btn btn-danger dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
-                  Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
+          <a class="btn btn-danger btn-lg ripple">Button</a>
 
           <h3>Pills</h3>
 
           <ul class="nav nav-pills">
-              <li role="presentation" class="active"><a href="#" class="ripple">Home</a></li>
-              <li role="presentation"><a href="#" class="ripple">Profile</a></li>
-              <li role="presentation"><a href="#" class="ripple">Messages</a></li>
+              <li role="presentation" class="active"><a href="javascript:void(0);" class="ripple">Home</a></li>
+              <li role="presentation"><a href="javascript:void(0);" class="ripple">Profile</a></li>
+              <li role="presentation"><a href="javascript:void(0);" class="ripple">Messages</a></li>
           </ul>
 
           <hr>

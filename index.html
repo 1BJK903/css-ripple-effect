@@ -14,6 +14,11 @@
       <link rel="stylesheet" href="bower_components/css-ripple-effect/ripple.css" />
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>  </head>
+      <style>
+          a {
+              outline: none !important;
+          }
+      </style>
   <body>
 
     <!-- HEADER -->
@@ -56,9 +61,9 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                           <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">Link</a></li>
+                          <li><a href="#" class="ripple">Link</a></li>
                           <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                              <a href="#" class="dropdown-toggle ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                               <ul class="dropdown-menu" role="menu">
                                   <li><a href="#">Action</a></li>
                                   <li><a href="#">Another action</a></li>
@@ -71,9 +76,9 @@
                           </li>
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#">Link</a></li>
+                          <li><a href="#" class="ripple">Link</a></li>
                           <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                              <a href="#" class="dropdown-toggle ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                               <ul class="dropdown-menu" role="menu">
                                   <li><a href="#">Action</a></li>
                                   <li><a href="#">Another action</a></li>
@@ -91,7 +96,7 @@
 
           <!-- Single button -->
           <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-default dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
                   Action <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -105,7 +110,7 @@
 
           <!-- Single button -->
           <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-primary dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
                   Action <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -119,7 +124,7 @@
 
           <!-- Single button -->
           <div class="btn-group">
-              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-success dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
                   Action <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -133,7 +138,7 @@
 
           <!-- Single button -->
           <div class="btn-group">
-              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-info dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
                   Action <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -147,7 +152,7 @@
 
           <!-- Single button -->
           <div class="btn-group">
-              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-warning dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
                   Action <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -161,7 +166,7 @@
 
           <!-- Single button -->
           <div class="btn-group">
-              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-danger dropdown-toggle ripple" data-toggle="dropdown" aria-expanded="false">
                   Action <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -176,15 +181,15 @@
           <h3>Pills</h3>
 
           <ul class="nav nav-pills">
-              <li role="presentation" class="active"><a href="#">Home</a></li>
-              <li role="presentation"><a href="#">Profile</a></li>
-              <li role="presentation"><a href="#">Messages</a></li>
+              <li role="presentation" class="active"><a href="#" class="ripple">Home</a></li>
+              <li role="presentation"><a href="#" class="ripple">Profile</a></li>
+              <li role="presentation"><a href="#" class="ripple">Messages</a></li>
           </ul>
 
           <hr>
 
           <h3>How it's done?</h3>
-          <p>Added some inline style to override so the ripple is fully visible. It is not leaving the block when by default.</p>
+          <p>Added some inline style to override so the ripple is fully visible.</p>
 
           <!-- Single button -->
           <style>
@@ -192,10 +197,10 @@
                   background: rgba(255,0,0,0.5) !important;
               }
           </style>
-          <button type="button" class="override btn btn-primary btn-lg">
+          <button type="button" class="btn btn-primary btn-lg ripple override">
               Override applied
           </button>
-          <button type="button" class="override btn btn-primary btn-lg">
+          <button type="button" class="btn btn-primary btn-lg ripple override">
               Override applied to a wider button
           </button>
 
@@ -209,7 +214,7 @@
 
           <h3>Usage</h3>
 
-          <p>This feature is currently added to ".btn" and ".navbar a" selectors. It can be added as a class or any other selector. The only problem is that it doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere towards bottom-left region.</p>
+          <p>To enable this feature just include CSS file and put "ripple" class on HTML element. The only problem is that it doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere towards bottom-left region.</p>
 
       </section>
     </div>

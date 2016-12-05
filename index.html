@@ -28,8 +28,7 @@
     <a id="forkme_banner" href="https://github.com/mladenplavsic/css-ripple-effect">View on GitHub</a>
 
     <h1 id="project_title">Pure CSS ripple effect (no JavaScript)</h1>
-    <h2 id="project_tagline">CSS-only implementation of Android Material design &quot;ripple&quot; animation on click
-      event</h2>
+    <h2 id="project_tagline">CSS-only implementation of Android Material design &quot;ripple&quot; animation</h2>
 
     <section id="downloads">
       <a class="zip_download_link" href="https://github.com/mladenplavsic/css-ripple-effect/zipball/master">Download
@@ -47,7 +46,29 @@
     <p>Main advantage of this solution is that there is no DOM manipulation in order to create animation. That means
       this is faster - it doesn't use JavaScript or jQuery to animate.</p>
 
-    <h2>Examples</h2>
+    <a class="btn btn-info btn-lg btn-block ripple">Click me to see the ripple effect</a>
+
+    <p>
+      <a href="#examples">More examples</a>
+    </p>
+
+    <h5>Install using bower</h5>
+
+    <code>bower install css-ripple-effect --save</code>
+
+    <h5>Include stylesheet into your HTML file</h5>
+
+    <code>&lt;link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css"&gt;</code>
+
+    <h5>Add CSS class</h5>
+
+    <code>&lt;a class="ripple"&gt;Link&lt;/a&gt;</code>
+
+    <p>To enable this feature just include CSS file and put "ripple" class on HTML element. The only problem is that it
+      doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere at the center of
+      the element.</p>
+
+    <h2 id="examples">Examples</h2>
 
     <p>
       <a class="btn btn-default ripple">Default</a>
@@ -193,14 +214,6 @@
         <a class="btn btn-default ripple">Button</a>
       </div>
     </div>
-
-    <hr>
-
-    <h2>Usage</h2>
-
-    <p>To enable this feature just include CSS file and put "ripple" class on HTML element. The only problem is that it
-      doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere at the center of
-      the element.</p>
 
   </section>
 </div>

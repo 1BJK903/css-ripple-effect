@@ -158,12 +158,13 @@ p img {
 }
 
 pre, code {
+  display: block;
   width: 100%;
   color: #222;
   background-color: #fff;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
+  font-size: 12px;
 
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -266,7 +267,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 768px;
   padding: 20px 10px;
   margin: 0 auto;
 }

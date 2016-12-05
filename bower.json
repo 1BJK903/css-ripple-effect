@@ -1,0 +1,21 @@
+{
+  "name": "css-ripple-effect-demo",
+  "homepage": "https://github.com/mladenplavsic/css-ripple-effect",
+  "authors": [
+    "Mladen Plavsic <mladen.plavsic@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "css-ripple-effect": "^1.0.0"
+  }
+}
